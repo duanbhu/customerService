@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>联系客服</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-img">
+            <img src="img/header.png" alt="header">
+        </div>
+        <h1>在线客服：扁担圈外卖商家版</h1>
+        <div>
+            <button class="wechat-btn" id="wechat-btn" onclick="handleWechatClick()">立即微信沟通</button>
+        </div>
+        <div class="contact-methods">
+            <div class="contact-item" onclick="handleNativeCall('13514957876')">
+                <p>客服电话：<span>135 1495 7876</span> <img src="img/call.png" alt="电话图标" class="call-icon"></p>
+            </div>
+            <div class="contact-item" onclick="handleNativeCall('13333333333')">
+                <p>技术电话：<span>133 3333 3333</span> <img src="img/call.png" alt="电话图标" class="call-icon"></p>
+            </div>
+            <div class="qrcode">
+                <img src="img/contact_qrcode.png" alt="企业微信二维码" class="qrcode-img">
+                <p><span>长按保存</span>至相册可添加客服微信</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
